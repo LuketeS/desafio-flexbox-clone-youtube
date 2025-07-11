@@ -1,4 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin:0;
     padding:0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    height: 56px;
+}
+
+.header-slice1{
+    display: flex;
+    margin: 16px 0 16px 24px ;
+    gap: 32px;
+}
+
+.header-slice2{
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    width: 404px;    
+}
+
+.header-searcher{
+    flex-grow: 3;
+    border: 1px solid #CCCCCC;
+}
+
+#header-searcher-button{
+    flex-grow: 1;
+    background-color: transparent;
+    background-image: url("../assets/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #CCCCCC;
+}
+
+.header-slice3{
+    display: flex;
+    justify-content: center;
+    margin: 11px 24px 11px 0;
+    gap: 24px;
+}
+
+
+main{
+    display: flex;
+    gap: 25px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 28px 0 0 75px;
+}
+
+.content-video{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+    min-width: 952px;
+}
+
+.content-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.content-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    margin: 0px 50px 0 0;
+}
+
+.content-react, .content-channel{
+    display: flex;
+    justify-content: center;    
+ 
+}
+
+.content-react, .content-views, .aside-video-description h4 {
+    font-weight: 600;
+    font-size: 14px;        
+}
+
+.content-react{
+    margin: 9px 0;
+    gap: 8px;
+    align-items: center;
+}
+
+.content-channel{
+    align-items: center;
+    gap:12px;
+
+}
+
+.content-channel, .content-description{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+#content-button-subscribe{
+    background-color: #CC0000;
+    width: 159px;
+    height: 40px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF ;
+}
+
+.content-views{
+    margin: 16px 0;
+}
+
+
+.content-description{
+    width: 510px;
+
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.aside-video{
+    display: flex;
+    gap: 16px;
+}
+
+.aside-video-description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aside-video-description p {
+    font-weight: 400;
+    font-size: 12px;
 }
